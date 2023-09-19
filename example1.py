@@ -1,4 +1,2 @@
-import random
-
-randnum = random.randint(1,3)
-print(randnum)
+nev = input("Neved: ")
+print("Hello! " + nev)
