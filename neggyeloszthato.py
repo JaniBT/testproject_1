@@ -7,5 +7,5 @@ for _ in range(10):
     if szam % 4 == 0:
         szamok.append(szam)
 
-print(szamok)
+print(*szamok)
 print(f'Összesen ennyi szám van: {len(szamok)}')
