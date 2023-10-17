@@ -8,3 +8,4 @@ for _ in range(10):
         szamok.append(szam)
 
 print(szamok)
+print(f'Összesen ennyi szám van: {len(szamok)}')
