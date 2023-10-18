@@ -23,7 +23,6 @@ def main():
 def output_pathkivalasztas():
     global fajl
     fajl = askdirectory()
-    print(fajl)
 
 root = tk.Tk()
 root.title("Háttér eltávolító")
