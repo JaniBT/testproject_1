@@ -6,6 +6,7 @@ import sys
 from tkinter import filedialog as fd
 from tkinter.filedialog import askdirectory
 
+#Fájl kiválasztásának függvénye
 def fajlhelyvalasztas():
     global fajlhely, fajltipusok, filepath
     fajltipusok = (('png fájlok', '*.png'), ('jpg fájlok', '*.jpg'), ('minden fájl', '*.'))
@@ -13,6 +14,7 @@ def fajlhelyvalasztas():
     if fajlhely:
         filepath = os.path.abspath(fajlhely.name)
 
+#A photoshop függvénye
 def main():
     global fajl
     input_path = filepath
@@ -21,10 +23,12 @@ def main():
     output = remove(input)
     output.save(output_path)
 
+#Bekéri a felhasználótól, hova akarja menteni a képet
 def output_pathkivalasztas():
     global fajl
     fajl = askdirectory()
 
+#tkinter felület
 root = tk.Tk()
 root.title("Háttér eltávolító")
 root.geometry("400x300")
