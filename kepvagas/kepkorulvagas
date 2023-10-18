@@ -19,6 +19,7 @@ def main():
     input = Image.open(input_path)
     output = remove(input)
     output.save(output_path)
+    
 
 def output_pathkivalasztas():
     global fajl
