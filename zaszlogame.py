@@ -2,7 +2,6 @@ import pygame
 import os
 import random
 import sys
-from zaszlok import *
 
 
 WIDTH = 600
