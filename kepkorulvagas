@@ -15,7 +15,7 @@ def fajlhelyvalasztas():
 def main():
     global fajl
     input_path = filepath
-    output_path = fajl.join('elkészült.png')
+    output_path = 'elkészült.png'
     input = Image.open(input_path)
     output = remove(input)
     output.save(output_path)
