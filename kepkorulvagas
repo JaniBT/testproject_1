@@ -1,0 +1,48 @@
+from rembg import remove
+from PIL import Image
+import tkinter as tk
+import os
+from tkinter import filedialog as fd
+from tkinter.filedialog import askdirectory
+
+def fajlhelyvalasztas():
+    global fajlhely, fajltipusok, filepath
+    fajltipusok = (('png fájlok', '*.png'), ('jpg fájlok', '*.jpg'), ('minden fájl', '*.'))
+    fajlhely = fd.askopenfile(mode='r', filetypes=fajltipusok)
+    if fajlhely:
+        filepath = os.path.abspath(fajlhely.name)
+
+def main():
+    global fajl
+    input_path = filepath
+    output_path = fajl.join('elkészült.png')
+    input = Image.open(input_path)
+    output = remove(input)
+    output.save(output_path)
+
+def output_pathkivalasztas():
+    global fajl
+    fajl = askdirectory()
+    print(fajl)
+
+root = tk.Tk()
+root.title("Háttér eltávolító")
+root.geometry("400x300")
+
+szoveg0 = tk.Label(root, text="Válaszd ki a fájlt, aminek el akarod távolítani a hátterét")
+szoveg0.pack(pady=5)
+btn1 = tk.Button(root, text="Kiválasztás", command=fajlhelyvalasztas)
+btn1.pack(pady=5)
+szoveg1 = tk.Label(root, text="Válaszd ki hova akarod menteni az elkészült fájlt")
+szoveg1.pack()
+btn3 = tk.Button(root, text="Kiválasztás", command=output_pathkivalasztas)
+btn3.pack(pady=2)
+szoveg2 = tk.Label(root, text="Az alábbi gombbal tudod elindítani a háttér eltávolítást")
+szoveg2.pack(pady=15)
+btn2 = tk.Button(root, text="Indítás", command=main)
+btn2.pack(pady=5)
+btn4 = tk.Button(root, text="Kilépés", command=root.destroy)
+btn4.pack(pady=10)
+
+
+root.mainloop()
