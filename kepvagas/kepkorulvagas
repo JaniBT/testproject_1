@@ -9,7 +9,7 @@ from tkinter.filedialog import askdirectory
 #Fájl kiválasztásának függvénye
 def fajlhelyvalasztas():
     global fajlhely, fajltipusok, filepath
-    fajltipusok = (('png fájlok', '*.png'), ('jpg fájlok', '*.jpg'), ('minden fájl', '*.'))
+    fajltipusok = (('png fájlok', '*.png'), ('jpg fájlok', '*.jpg'), ('jfif fájlok', '*.jfif'), ('minden fájl', '*.'))
     fajlhely = fd.askopenfile(mode='r', filetypes=fajltipusok)
     if fajlhely:
         filepath = os.path.abspath(fajlhely.name)
