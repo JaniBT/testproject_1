@@ -19,15 +19,10 @@ while status:
                             print(f'Az eredmény: {szam1-szam2}')
                         elif muveletijel == "*":
                             print(f'Az eredmény: {szam1*szam2}')
-                        else:
+                        elif muveletijel == "/":
                             print(f'Az eredmény: {szam1/szam2}')
-                        print("\n================================ (69 leütésével léphetsz ki)")
-                        print("Adj meg egy számot: ")
-                        szam1 = int(input())
-                        print("Adj meg egy másik számot: ")
-                        szam2 = int(input())
-                        print("Add meg, hogy kivonni, összeadni, szorozni vagy osztani szeretnéd: ")
-                        muveletijel = input()
+                        else:
+                            print('Csak adott műveleti jelet adhatsz meg! (+, -, *, /)')
                     elif szam1 == "q":
                         status = False
             elif szam1 == "q":
