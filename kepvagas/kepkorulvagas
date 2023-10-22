@@ -2,29 +2,33 @@ from rembg import remove
 from PIL import Image
 import tkinter as tk
 import os
+import sys
 from tkinter import filedialog as fd
 from tkinter.filedialog import askdirectory
 
+#Fájl kiválasztásának függvénye
 def fajlhelyvalasztas():
     global fajlhely, fajltipusok, filepath
-    fajltipusok = (('png fájlok', '*.png'), ('jpg fájlok', '*.jpg'), ('minden fájl', '*.'))
+    fajltipusok = (('png fájlok', '*.png'), ('jpg fájlok', '*.jpg'), ('jfif fájlok', '*.jfif'), ('minden fájl', '*.'))
     fajlhely = fd.askopenfile(mode='r', filetypes=fajltipusok)
     if fajlhely:
         filepath = os.path.abspath(fajlhely.name)
 
+#A photoshop függvénye
 def main():
     global fajl
     input_path = filepath
-    output_path = fajl.join('elkészült.png')
+    output_path = 'elkészült.png'
     input = Image.open(input_path)
     output = remove(input)
     output.save(output_path)
 
+#Bekéri a felhasználótól, hova akarja menteni a képet
 def output_pathkivalasztas():
     global fajl
     fajl = askdirectory()
-    print(fajl)
 
+#tkinter felület
 root = tk.Tk()
 root.title("Háttér eltávolító")
 root.geometry("400x300")
