@@ -5,7 +5,12 @@ SVG Preview
 
 Frontend Tools:
 icons8.com
-
+cssbuttons.app
+uiball.com
+10015.io
+magic.css
+useanimations.com
+finsweet.com/lottieflow
 
 Javascript animáció:
 
