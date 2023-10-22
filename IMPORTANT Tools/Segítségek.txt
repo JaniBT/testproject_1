@@ -1,0 +1,23 @@
+Extensions VSCode-hoz:
+Hungry Delete
+Error Lens
+SVG Preview
+
+Frontend Tools:
+icons8.com
+
+
+Javascript animáció:
+
+Anime.js
+Vivus (SVG)
+GSAP
+
+CSS fontosabb dolgok:
+
+transform: rotate();
+transform: scale();
+transform: matrix();
+transform: translate();
+transform: stew();
+
