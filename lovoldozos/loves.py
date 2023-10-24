@@ -28,12 +28,12 @@ while status:
             status = False
             sys.exit()
 
-    key = pygame.key.get_pressed()
-    if player_x < 580 and player_x > 20:
-        if key[pygame.K_RIGHT]:
-            player_x += 5
-        if key[pygame.K_LEFT]:
-            player_x -= 5
+        key = pygame.key.get_pressed()
+        if player_x < 580 or player_x > 20:
+            if key[pygame.K_RIGHT]:
+                player_x += 5
+            if key[pygame.K_LEFT]:
+                player_x -= 5
     
 
     pygame.display.update()
