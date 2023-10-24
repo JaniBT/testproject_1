@@ -72,7 +72,7 @@ footer {
 }
 
 .Merkur{
-    background-image: url(Kep/galaxis.jpg);
+    background-color: grey;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,6 +84,12 @@ footer {
     background-color: black;
     color: #fff;
     height: 100vh;
+}
+
+.kettescim {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
 }
 
 #napocska {
@@ -102,6 +108,12 @@ footer {
     display: block;
     margin: 0 auto;
     width: 10%;
+}
+
+#Venusz {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
 }
 
 #szoveg {
