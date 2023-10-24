@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@media (max-width: 768px) {
+    
+}
+@media (min-width: 769px) {
+    
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,6 +25,9 @@ header {
     text-align: left;
     position: relative;
     top: 50%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -41,17 +52,10 @@ nav a {
     margin: 0 10px;
 }
 
-main {
-    padding: 20px;
-}
-
 section {
     text-align: center;
     align-items: center;
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #ccc;
+    width: 100%;
 }
 
 footer {
@@ -61,14 +65,58 @@ footer {
     padding: 10px;
 }
 
+.Nap{
+    background-color: black;
+    height: 100%;
+    color: #fff;
+}
+
+.Merkur{
+    background-image: url(Kep/galaxis.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    
+}
+
 #napocska {
     display: block;
     margin: 0 auto;
-    width: 35%;
+    width: 40%;
+}
+
+#Merkur {
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+}
+
+#fold {
+    display: block;
+    margin: 0 auto;
+    width: 10%;
 }
 
 #szoveg {
-    width: 40%;
-    text-align: center;
-    margin-left: 30%;
+    width: 30%;
+    text-align: justify;
+    margin: auto;
+}
+
+#gomb-vissza {
+    display: none; /* Kezdetben rejtve van */
+    position: fixed; /* A gomb rögzítve marad az oldal görgetésével */
+    bottom: 20px; /* A gomb pozíciója az oldal alján */
+    right: 20px; /* A gomb pozíciója a jobb alsó sarokban */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#gomb-vissza:hover {
+    background-color: #0056b3; /* Gomb háttérszínének módosítása a hover eseményre */
 }
