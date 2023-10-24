@@ -21,7 +21,7 @@ header {
     font-family: 'Bebas Neue';
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: left;
     position: relative;
     top: 50%;
@@ -67,7 +67,7 @@ footer {
 
 .Nap{
     background-color: black;
-    height: 100%;
+    height: 100vh;
     color: #fff;
 }
 
@@ -76,8 +76,14 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
-    
+    height: 100vh;
+    color: #fff;
+}
+
+.Venusz {
+    background-color: black;
+    color: #fff;
+    height: 100vh;
 }
 
 #napocska {
@@ -104,19 +110,14 @@ footer {
     margin: auto;
 }
 
-#gomb-vissza {
-    display: none; /* Kezdetben rejtve van */
-    position: fixed; /* A gomb rögzítve marad az oldal görgetésével */
-    bottom: 20px; /* A gomb pozíciója az oldal alján */
-    right: 20px; /* A gomb pozíciója a jobb alsó sarokban */
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#merkurszoveg {
+    width: 30%;
+    text-align: justify;
+    margin: auto;
 }
 
-#gomb-vissza:hover {
-    background-color: #0056b3; /* Gomb háttérszínének módosítása a hover eseményre */
+#venuszszoveg {
+    width: 30%;
+    text-align: justify;
+    margin: auto;
 }
