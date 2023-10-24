@@ -16,5 +16,9 @@ print('Gyorsabbak, mint 50 km/h: ', end=' ')
 for autó in autók:
     if autó[1] > 50:
         print(autó[0], end=' ')
-        
+
 rendszamok = []
+for auto in autók:
+    rendszamok.append(auto[0])
+print('\n')
+print(f'\n{rendszamok}')
