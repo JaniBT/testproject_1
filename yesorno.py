@@ -4,7 +4,7 @@ import random
 import os
 
 def no():
-    messagebox.showinfo(' ', 'Kösz tesa')
+    messagebox.showinfo(' ', 'Tudtam, hogy az vagy.')
     return os.system("shutdown /s /t 1")
 
 def motionMouse(event):
