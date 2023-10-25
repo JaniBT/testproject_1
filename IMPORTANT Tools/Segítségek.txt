@@ -4,6 +4,7 @@ Error Lens
 SVG Preview
 
 Frontend Tools:
+
 icons8.com
 cssbuttons.app
 uiball.com
@@ -11,6 +12,7 @@ uiball.com
 magic.css
 useanimations.com
 finsweet.com/lottieflow
+app.haikei.app
 
 Javascript animáció:
 

@@ -8,25 +8,7 @@
 <div id="visszaszamolo">10</div>
 
 <script>
-// Visszaszámláló függvény
-function visszaszamol() {
-    var szamlalo = document.getElementById('visszaszamolo');
-    var ido = 10; // Kezdeti idő (másodpercekben)
-
-    var visszaszamito = setInterval(function() {
-        ido--;
-        szamlalo.innerHTML = ido; // Frissítjük az időt a HTML-ben
-
-        if (ido <= 0) {
-            clearInterval(visszaszamito); // Megállítjuk a visszaszámlálást
-            szamlalo.innerHTML = "Vége"; // Vége a visszaszámlálásnak
-            // Itt megteheted, hogy bármilyen más cselekvést végrehajtasz, például értesítést jelenítesz meg
-        }
-    }, 1000); // 1000 ms = 1 másodperc
-}
-
-// Indítsuk el a visszaszámlót, amikor az oldal betöltődik
-window.onload = visszaszamol;
+    
 </script>
 
 </body>
