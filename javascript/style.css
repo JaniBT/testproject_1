@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+a:hover:after {
+    color: aqua;
+}
+
+h1 {
+    color: #fff;
+    letter-spacing: 10px;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
