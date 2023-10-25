@@ -10,13 +10,14 @@ def no():
 def motionMouse(event):
     btnYes.place(x=random.randint(0, 500), y=random.randint(0, 500))
 
-
+def disable_close_button():
+    pass
 
 root = Tk()
 root.geometry("600x600")
 root.title("Kérdőív")
 root.resizable(width=False, height=False)
-
+root.protocol("WM_DELETE_WINDOW", disable_close_button)
 Label = Label(root, text="Buzi vagy?", font="Arial 20 bold").pack()
 btnYes = Button(root, text="Nem", font="Arial 20 bold")
 btnYes.place(x=170, y=100)
