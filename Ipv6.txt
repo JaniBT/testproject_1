@@ -1,0 +1,6 @@
+Router(config)#ipv6 unicast-routing 
+Router(config)#int fa0/0
+Router(config-if)#ipv6 enable
+Router(config-if)#ipv6 address 2001:ABCD::1/64
+Router(config-if)#ipv6 address FE80::1 link-local
+Router(config-if)#exit
