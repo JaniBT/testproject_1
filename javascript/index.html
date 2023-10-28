@@ -1,33 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-    <title>Visszaszámláló</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="valami.js"></script>
+    <title>Javascript Teszt</title>
 </head>
 <body>
-
-<div id="visszaszamolo">10</div>
-
-<script>
-// Visszaszámláló függvény
-function visszaszamol() {
-    var szamlalo = document.getElementById('visszaszamolo');
-    var ido = 10; // Kezdeti idő (másodpercekben)
-
-    var visszaszamito = setInterval(function() {
-        ido--;
-        szamlalo.innerHTML = ido; // Frissítjük az időt a HTML-ben
-
-        if (ido <= 0) {
-            clearInterval(visszaszamito); // Megállítjuk a visszaszámlálást
-            szamlalo.innerHTML = "Vége"; // Vége a visszaszámlálásnak
-            // Itt megteheted, hogy bármilyen más cselekvést végrehajtasz, például értesítést jelenítesz meg
-        }
-    }, 1000); // 1000 ms = 1 másodperc
-}
-
-// Indítsuk el a visszaszámlót, amikor az oldal betöltődik
-window.onload = visszaszamol;
-</script>
-
+    <input type="text" id="display" readonly>
+    <button onclick="cleardisplay()">C</button>
+    
 </body>
 </html>
